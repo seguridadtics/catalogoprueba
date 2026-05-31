@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "codigo": "1",
+        "nombre": "LAPIZ DE COLOR",
+        "descripcion": "100",
+        "precio": 2.0,
+        "categoria": "PAPELERIA",
+        "imagen": "img/ChatGPT_Image_2_may_2026_11_00_34_p.m..png"
+    },
+    {
+        "id": 2,
+        "codigo": "56698602",
+        "nombre": "LAPIZ DE COLOR BNNNN",
+        "descripcion": "",
+        "precio": 2.0,
+        "categoria": "PAPELERIA",
+        "imagen": "img/ChatGPT_Image_2_may_2026_11_00_34_p_Dapgovu.m..png"
+    },
+    {
+        "id": 3,
+        "codigo": "6920250180045",
+        "nombre": "PESTAÑAS POSTIZA",
+        "descripcion": "EIE",
+        "precio": 3.5,
+        "categoria": "PAPELERIA",
+        "imagen": "img/FLUX2_max-generation-1_1.png"
+    },
+    {
+        "id": 4,
+        "codigo": "8955155811617",
+        "nombre": "UÑAS",
+        "descripcion": "",
+        "precio": 3.0,
+        "categoria": "PAPELERIA",
+        "imagen": ""
+    }
+]

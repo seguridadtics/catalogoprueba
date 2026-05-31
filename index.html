@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Web Premium</title>
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Shapes -->
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header class="glass-header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Catálogo<span>.</span></h1>
+            </div>
+            
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar productos por nombre...">
+            </div>
+
+            <div class="header-actions">
+                <button id="cartToggle" class="icon-btn" aria-label="Ver carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartBadge" class="cart-badge">0</span>
+                </button>
+                <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="filters-container">
+            <div id="categoryFilters" class="category-filters">
+                <button class="filter-btn active" data-category="Todos">Todos</button>
+                <!-- Las categorías se cargarán dinámicamente aquí -->
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="productsGrid" class="products-grid">
+            <!-- Loading State -->
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i> Cargando productos...
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Tu Carrito</h2>
+            <button id="closeCart" class="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Items del carrito irán aquí -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-form">
+                <input type="text" id="customerName" placeholder="Tu Nombre y Apellido" required>
+                <input type="text" id="customerID" placeholder="Tu Cédula" required>
+                <input type="tel" id="customerPhone" placeholder="Tu Teléfono" required>
+                <textarea id="customerAddress" placeholder="Dirección de envío o indicaciones (Opcional)" rows="2"></textarea>
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span>$<span id="cartTotalValue">0.00</span></span>
+            </div>
+            <button id="checkoutBtn" class="btn-checkout">
+                <i class="fab fa-whatsapp"></i> Enviar Pedido
+            </button>
+        </div>
+    </aside>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" id="floatingWhatsApp" class="floating-wa" target="_blank" aria-label="Contactar para ayuda">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
